@@ -2,6 +2,8 @@
 
 ![Tela inicial](landingpage.png)
 
+![Diagrama](diagrama.png)
+
 ## Descrição
 Este sistema permite o agendamento de horários para acionamento de uma sirene escolar, utilizando um Arduino para a execução.
 
