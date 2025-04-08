@@ -126,6 +126,15 @@ input[type="time"] {
     background-color: #bbdfc9 !important;
 }
 
+.fundo{
+    background-image: url("../img/background.png");
+}
+
 .text-table{
     color: #193b2e !important;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #28a745; /* verde do Bootstrap */
+    border-color: #28a745;
 }

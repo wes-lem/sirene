@@ -3,13 +3,13 @@ import sqlite3
 conn = sqlite3.connect("sirene.db")
 cursor = conn.cursor()
 
-# Apagar todos os dados da tabela historico
-cursor.execute("DELETE FROM historico")
-conn.commit()
+# Atualiza todos os registros da tabela historico para status PENDENTE
+cursor.execute("""
+    UPDATE historico
+    SET status = 'PENDENTE'
+""")
 
-# Reinicia o autoincremento do ID (opcional)
-cursor.execute("DELETE FROM sqlite_sequence WHERE name='historico'")
 conn.commit()
-
 conn.close()
-print("🧹 Todos os registros da tabela 'historico' foram apagados com sucesso.")
+
+print("🔄 Todos os registros da tabela 'historico' foram atualizados para status PENDENTE.")

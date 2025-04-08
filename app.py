@@ -2,7 +2,6 @@ from flask import Flask, render_template, session, redirect, url_for, request, f
 from controllers.horarios_controller import horarios_bp
 from controllers.sirene_controller import sirene_bp
 from controllers.login_controller import auth_bp
-from controllers.historico_controller import historico_bp
 from services.schedule_service import iniciar_verificacao_horarios
 import sqlite3
 
@@ -13,7 +12,6 @@ app.secret_key = 'sua_chave_secreta_muito_segura'  # Adicione esta linha
 app.register_blueprint(horarios_bp, url_prefix="/horarios")
 app.register_blueprint(sirene_bp, url_prefix="/sirene")
 app.register_blueprint(auth_bp, url_prefix="/auth")
-app.register_blueprint(historico_bp, url_prefix="/historico")
 
 # Rota principal redireciona para login
 @app.route("/")

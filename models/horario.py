@@ -1,5 +1,4 @@
 from enum import Enum
-from datetime import datetime
 
 class StatusAlarme(Enum):
     PENDENTE = "Pendente"
