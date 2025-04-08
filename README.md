@@ -14,7 +14,12 @@ Este sistema permite o agendamento de horários para acionamento de uma sirene e
 - PySerial (comunicação com Arduino)
 
 ## Instalação e Execução
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/sistema-sirene.git
-   cd sistema-sirene
+```bash
+   python -m venv venv
+   
+   venv\Scripts\activate
+   
+   pip install -r requirements.txt
+   
+   python app.py
+```
