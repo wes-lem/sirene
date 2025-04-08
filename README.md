@@ -1,5 +1,7 @@
 # Sistema de Agendamento de Sirene Escolar
 
+![Tela inicial](landingpage.png)
+
 ## Descrição
 Este sistema permite o agendamento de horários para acionamento de uma sirene escolar, utilizando um Arduino para a execução.
 
